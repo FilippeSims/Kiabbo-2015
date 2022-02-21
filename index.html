@@ -1,0 +1,559 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Kibboa</title>
+    <style>
+
+    </style>
+
+
+</head>
+
+<body>
+    <nav id="menu">
+        <!-- MENU -->
+        <ul class="menu">
+            <div id="botao_menu"></div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Habbo</a></li>
+            <li><a href="#">Comunidade</a></li>
+            <li><a href="#">Fórum</a></li>
+            <li><a href="#">Tópicos</a>
+                <ul>
+                    <li><a href="#">Lista completa</a></li>
+                    <li><a href="#">Criar tópico</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Moderação</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Cotação</a></li>
+            <li><a href="#">Mobis</a></li>
+
+            <!--Avatar-->
+            <div id="avatar_menu">
+                <div style="width:50px; height:50px; margin-top:5px; margin-left:7px; background:url(img/avatar_foto.png); float:left;"> </div>
+                <div style="width:50px; height:50px; margin-top:-50px; margin-left:7px; background:url(img/avatar_menu_gradient.png); float:left;"> </div>
+
+            </div>
+            <!--Fim Avatar-->
+
+            <!--Noficação-->
+            <div id="notificacao">
+                <p>0</p>
+            </div>
+            <!--Fim notificação-->
+
+        </ul>
+    </nav>
+    <!--FIM MENU-->
+
+
+    <header>
+        <section id="conteudo_header">
+            <div id="mensagem_boas">
+                <h1>Bem-vindo!</h1>
+                <p>Olá, <i style="color:#FFFFFF;">visitante!</i> Navegue, explore e conheça tudo sobre a nossa nova versão.</p>
+                <input type="button" id="crie" value="Crie sua conta agora!">
+                <i style="color:#FFFFFF">Ou</i>
+                <input type="button" id="acesse" value="Acesse sua conta">
+            </div>
+
+            <div id="slide">
+                <div class="img-slide">
+                    <h2>Anuncie aqui!</h2>
+                </div>
+            </div>
+
+            <div id="player">
+                <div id="volume"></div>
+                <div id="avatar_player"></div>
+                <div id="nome_player">
+                    <div id="icon_locutor"></div>
+                    <p>Moreno-Bombom</p>
+                </div>
+                <div id="programa_player">
+                    <div id="icon_programa"></div>
+                    <p>Explosão Musical</p>
+                </div>
+                <div id="ouvintes">
+                    <p>320</p>
+                </div>
+                <div id="play"></div>
+                <div id="skype"></div>
+                <div id="pedidos"></div>
+                <div id="favorito"></div>
+                <div id="cor_player"></div>
+            </div>
+
+
+        </section>
+    </header>
+
+    <div id="conteudo">
+        <aside id="margin_lateral">
+            <div id="box_lateral">
+                <div id="box_titulo_lateral" style="background:url(img/box_lateral_1.png); color:#FFFFFF; text-shadow:1px 1px #4F5D6E;">
+                    <p>Acesse sua conta</p>
+                </div>
+                <div id="box_conteudo_lateral">
+                    <p style="font-size:12px; margin-left:6px;">Nome de usuário ou E-mail</p>
+                    <center><input id="usuario_login" type="text"></center>
+                    <p style="font-size:12px; margin-left:6px;">Sua senha <a href="#" style="float:right; text-decoration:none; color:#545959; font-size:12px; margin-right:6px;">Esqueci minha senha</a></p>
+                    <center><input id="senha_login" type="password"></center>
+                    <input style="margin-left:10px; margin-top:10px;" type="checkbox"> Mantenha-me conectado!
+                    <br>
+                    <center>
+                        <br>
+                        <input type="button" id="entrar" value="Entrar">
+                        <input type="button" id="registre" value="Registre-se!">
+                    </center>
+                    </p>
+                </div>
+            </div>
+            <!--Box Lateral-->
+
+            <div id="box_lateral">
+                <div id="box_titulo_lateral" style="background:url(img/box_lateral_2.png); color:#555555; text-shadow:1px 1px #C3C8CB;">
+                    <p>Eventos recentes <a href="#"><span id="vermais_1">Ver Mais</span></a> </p>
+                </div>
+                <div id="box_conteudo_lateral">
+                    <p>
+                        <div id="evento_recente">
+                            <div id="imagem_evento_recente">
+                                <div style="width:60px; height:60px; background:url(img/imagemmdamda.png) no-repeat center;"></div>
+                            </div>
+                            <div id="conteudo_evento_recente">
+                                <p style="font-weight:bold;">Resistência</p>
+                                <p>Acontecendo</p>
+                                <div id="status_evento_recente_ok"></div>
+                            </div>
+                        </div>
+
+                        <div id="evento_recente">
+                            <div id="imagem_evento_recente">
+                                <div style="width:60px; height:60px; background:url(img/imagemmdamda.png) no-repeat center;"></div>
+                            </div>
+                            <div id="conteudo_evento_recente">
+                                <p style="font-weight:bold;">Resistência</p>
+                                <p>Acontecendo</p>
+                                <div id="status_evento_recente"></div>
+                            </div>
+                        </div>
+
+                        <div id="evento_recente">
+                            <div id="imagem_evento_recente">
+                                <div style="width:60px; height:60px; background:url(img/imagemmdamda.png) no-repeat center;"></div>
+                            </div>
+                            <div id="conteudo_evento_recente">
+                                <p style="font-weight:bold;">Resistência</p>
+                                <p>Acontecendo</p>
+                                <div id="status_evento_recente"></div>
+                            </div>
+                        </div>
+                        <input type="text" value="Pesquisar Evento" style="background:#727374; color:#FFFFFF; border:none; padding:5px; height:30px; outline:none; margin-top:10px; margin-left:5px; border-radius:5px;">
+                    </p>
+                </div>
+            </div>
+            <!--Box Lateral-->
+
+
+
+            <div id="box_lateral">
+                <div id="box_titulo_lateral" style="background:url(img/box_lateral_1.png); text-shadow:1px 1px #4F5D6E; color:#FFFFFF;">
+                    <p>Usuários mais ativos<a href="#"><span id="vermais_2">Ver Mais</span></a></p>
+                </div>
+                <div id="box_conteudo_lateral">
+                    <p>
+                        <div id="fundo_usuario" style="width:270px; height:44px; background:#D2E09F; margin:0 auto; border-radius:30px;">
+                            <div id="numeracao_usuario" style="width:34px; height:34px; background:url(img/1º.png); float:left; margin-top:5px; margin-left:5px;"></div>
+                            <div id="teste" style="width:33px; height:35px; background:url(img/avatarimage.gif); float:left;"></div>
+                            <p style="color:#626262; margin:0; padding:13px; font-weight:bold;">Filippe</p>
+                        </div>
+
+                        <div id="fundo_usuario" style="width:270px; height:44px; background:#CECFD0; margin:0 auto; margin-top:5px; border-radius:30px;">
+                            <div id="numeracao_usuario" style="width:34px; height:34px; background:url(img/fundo_rank.png); float:left; margin-top:5px; margin-left:5px;">
+                                <p style="margin:0;padding:8px 0px 0px 13px; color:#FFFFFF; text-shadow:1px 1px #6B6D6F;">2</p>
+                            </div>
+                            <div id="teste" style="width:33px; height:35px; background:url(img/avatarimage.gif); float:left;"></div>
+                            <p style="color:#626262; margin:0; padding:13px; font-weight:bold;">Filippe</p>
+                        </div>
+                        <input type="text" value="Pesquisar Usuário" style="background:#D6D6D6; color:#666666; border:none; padding:5px; height:30px; outline:none; margin-top:10px; margin-left:5px; border-radius:5px;">
+                    </p>
+                </div>
+            </div>
+            <!--Box Lateral-->
+
+            <div id="box_lateral">
+                <div id="box_titulo_lateral" style="background:url(img/box_lateral_1.png); color:#FFFFFF; text-shadow:1px 1px #4F5D6E;">
+                    <p>Usuários em destaque<a href="#"><span id="vermais_2">Ver Mais</span></a></p>
+                </div>
+                <div id="box_conteudo_lateral">
+                    <p>
+                        <p style="margin:0; color:#666666; padding:5px 0 10px 12px;">Ouvintes</p>
+                        <div id="destaque_ouvinte">
+                            <div id="palco_destaque"></div>
+                            <div id="avatar_destaque" style="width:64px; height:110px; float:left; margin-top:-8px; margin-left:-86px; z-index:11; position:relative; background:url(img/avatarimage1.gif);"></div>
+                            <div id="mensagem_destaque">
+                                <p style="padding:10px 0 0 20px; font-weight:bold; color:#666666;">Nick</p>
+                                <p style="padding:5px 20px 0 20px; color:#666666; font-size:12px;">Por participar ativamentedas promoções e eventos,ajudando na comunidade!</p>
+                            </div>
+                        </div>
+
+                        <p style="margin:0; font-size:12px; color:#666666; padding:5px 0 5px 12px;">Moderação</p>
+                        <div id="destaque_outros">
+                            <div id="avatar_outros" style="width:33px; height:56px; margin-top:4px; margin-left:5px; background:url(img/avatarimage2.gif); float:left;"></div>
+                            <div id="mensagem_outros">
+                                <p style="padding:15px 0 0 20px; font-weight:bold; color:#666666;">Nick</p>
+                            </div>
+                        </div>
+                        <input type="text" value="Pesquisar Usuário" style="background:#D6D6D6; color:#666666; border:none; padding:5px; height:30px; outline:none; margin-top:10px; margin-left:5px; border-radius:5px;">
+                    </p>
+                </div>
+            </div>
+            <!--Box Lateral-->
+
+            <div id="box_lateral">
+                <div id="box_titulo_lateral" style="background:url(img/box_lateral_1.png); color:#FFFFFF; text-shadow:1px 1px #668800;">
+                    <p>Últimos valores<a href="#"><span id="vermais_2">Ver Mais</span></a></p>
+                </div>
+                <div id="box_conteudo_lateral">
+                    <p>
+                        <div id="valores_ultimos">
+                            <div id="img_mobi_valores" style="width:40px; height:40px; margin-top:22px; margin-left:10px; float:left; background:url(img/mobi.png)no-repeat center;"></div>
+                            <div id="informacoes_valores" style="width:212px; height:74px; background:url(img/info_valores.png); float:left; margin-left:3px; margin-top:3px;">
+                                <p style="margin:0; padding:10px;">Nome</p>
+                                <div id="preco_valores">
+                                    <p style="margin:0; padding:6px 0 0 35px; color:#666666;">30</p>
+                                </div>
+                                <div id="preco_lupa"></div>
+                                <div id="preco_variacao_3"></div>
+                            </div>
+                        </div>
+
+                        <div id="valores_ultimos">
+                            <div id="img_mobi_valores" style="width:40px; height:40px; margin-top:22px; margin-left:10px; float:left; background:url(img/mobi.png)no-repeat center;"></div>
+                            <div id="informacoes_valores" style="width:212px; height:74px; background:url(img/info_valores.png); float:left; margin-left:3px; margin-top:3px;">
+                                <p style="margin:0; padding:10px;">Nome</p>
+                                <div id="preco_valores">
+                                    <p style="margin:0; padding:6px 0 0 35px; color:#666666;">30</p>
+                                </div>
+                                <div id="preco_lupa"></div>
+                                <div id="preco_variacao_2"></div>
+                            </div>
+                        </div>
+                        <input type="text" value="Pesquisar Usuário" style="background:#D6D6D6; color:#666666; border:none; padding:5px; height:30px; outline:none; margin-top:10px; margin-left:5px; border-radius:5px;">
+
+                    </p>
+
+                </div>
+            </div>
+            <!--Box Lateral-->
+
+            <div id="box_lateral">
+                <div id="box_titulo_lateral" style="background:url(img/box_lateral_3.png); color:#FFFFFF; text-shadow:1px 1px #698C00;">
+                    <p>Promoções e eventos<a href="#"><span id="vermais_3">Ver Mais</span></a></p>
+                </div>
+                <div id="box_conteudo_lateral">
+                    <p>Conteúdo</p>
+                </div>
+            </div>
+            <!--Box Lateral-->
+
+        </aside>
+
+        <article id="margin_meio">
+            <div id="mapeamento">
+                <div id="botao_menu_mapeamento"></div>
+                <div id="divisor"></div>
+                <div id="mapa_mepeamento">
+                    <p><b>Inicio</b> > <b>Comunidade</b> > <b>Forum</b></p>
+                </div>
+                <br>
+                <div id="titulo_mapeamento">
+                    <p>Tópicos Recentes</p>
+                </div>
+                <div id="botao_mapeamento"></div>
+            </div>
+
+            <div id="box_meio">
+                <div id="box_titulo_meio">
+                    <p>Últimas notícias <span id="vermais_1">Ver Mais</span></p>
+                </div>
+                <div id="box_conteudo_meio">
+                    <p>
+                        <div id="noticia_conteudo">
+                            <div id="noticia">
+                                <div id="imagem_noticia" style="background:#2B3D4D;">
+                                    <div id="bandeira" style="width:31px; height:31px; background:url(img/bandeira.png) #3C556B no-repeat center; border-radius:5px; float:left; margin:5px;"></div>
+                                </div>
+                                <div id="info_noticia">
+                                    <p style="color:#B3CE62; font-weight:bold; margin:0; padding:15px 5px 5px 15px;">Titulo</p>
+                                    <p style="margin:0; padding:0px 5px 5px 15px; font-size:12px; color:#868686;">Confira as novas mobílias queforam encontradas no hotel!</p>
+                                </div>
+                            </div>
+
+                            <div id="noticia">
+                                <div id="imagem_noticia" style="background:#2B3D4D;">
+                                    <div id="bandeira" style="width:31px; height:31px; background:url(img/bandeira.png) #3C556B no-repeat center; border-radius:5px; float:left; margin:5px;"></div>
+                                </div>
+                                <div id="info_noticia">
+                                    <p style="color:#B3CE62; font-weight:bold; margin:0; padding:15px 5px 5px 15px;">Titulo</p>
+                                    <p style="margin:0; padding:0px 5px 5px 15px; font-size:12px; color:#868686;">Confira as novas mobílias queforam encontradas no hotel!</p>
+                                </div>
+                            </div>
+
+                            <div id="noticia">
+                                <div id="imagem_noticia" style="background:#2B3D4D;">
+                                    <div id="bandeira" style="width:31px; height:31px; background:url(img/bandeira.png) #3C556B no-repeat center; border-radius:5px; float:left; margin:5px;"></div>
+                                </div>
+                                <div id="info_noticia">
+                                    <p style="color:#B3CE62; font-weight:bold; margin:0; padding:15px 5px 5px 15px;">Titulo</p>
+                                    <p style="margin:0; padding:0px 5px 5px 15px; font-size:12px; color:#868686;">Confira as novas mobílias queforam encontradas no hotel!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <div id="box_meio">
+                <div id="box_titulo_meio">
+                    <p>Tópicos recentes <span id="vermais_1">Ver Mais</span></p>
+                </div>
+                <div id="box_conteudo_meio">
+                    <p>
+                        <div id="centralizar_topico">
+                            <div id="topico">
+                                <div id="avatar_topico">
+                                    <div id="img_avatar_topico" style="width:64px; height:98px; margin-left:-2px; margin-top:-8px; background:url(img/avatarimage1.gif);"></div>
+                                </div>
+                                <div id="informacoes_topico">
+                                    <div id="titulo_topico" style="width:236px; height:49px; background:url(img/titulo_topico.png); float:left; margin-left:2px; margin-top:5px;">
+                                        <p style="margin:0; padding:12px; color:#666666;">Titulo</p>
+                                    </div>
+                                    <p style="margin:0; padding:15px 0px 0px 16px; color:#666666;">nome</p>
+                                </div>
+                            </div>
+
+                            <div id="topico">
+                                <div id="avatar_topico">
+                                    <div id="img_avatar_topico" style="width:64px; height:98px; margin-left:-2px; margin-top:-8px; background:url(img/avatarimage1.gif);"></div>
+                                </div>
+                                <div id="informacoes_topico">
+                                    <div id="titulo_topico" style="width:236px; height:49px; background:url(img/titulo_topico.png); float:left; margin-left:2px; margin-top:5px;">
+                                        <p style="margin:0; padding:12px; color:#666666;">Titulo</p>
+                                    </div>
+                                    <p style="margin:0; padding:15px 0px 0px 16px; color:#666666;">nome</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <div id="box_meio">
+                <div id="box_titulo_meio">
+                    <p>Coisas grátis <span id="vermais_1">Ver Mais</span></p>
+                </div>
+                <div id="box_conteudo_meio">
+
+                    <p>
+                        <div id="fundo_coisas" style="width:64px; height:64px; margin-left:5px; float:left; background:url(img/fundo_coisas.png);">
+                            <div id="img_coisas" style="width:64px; height:64px; background:url(img/imagemmdamda.png) no-repeat center;"></div>
+                        </div>
+
+                        <div id="fundo_coisas" style="width:64px; height:64px; margin-left:5px; float:left; background:url(img/fundo_coisas.png);">
+                            <div id="img_coisas" style="width:64px; height:64px; background:url(img/imagemmdamda.png) no-repeat center;"></div>
+                        </div>
+                        <div id="fundo_coisas" style="width:64px; height:64px; margin-left:5px; float:left; background:url(img/fundo_coisas.png);">
+                            <div id="img_coisas" style="width:64px; height:64px; background:url(img/imagemmdamda.png) no-repeat center;"></div>
+                        </div>
+                        <div id="fundo_coisas" style="width:64px; height:64px; margin-left:5px; float:left; background:url(img/fundo_coisas.png);">
+                            <div id="img_coisas" style="width:64px; height:64px; background:url(img/imagemmdamda.png) no-repeat center;"></div>
+                        </div>
+                        <div id="fundo_coisas" style="width:64px; height:64px; margin-left:5px; float:left; background:url(img/fundo_coisas.png);">
+                            <div id="img_coisas" style="width:64px; height:64px; background:url(img/imagemmdamda.png) no-repeat center;"></div>
+                        </div>
+                        <div id="fundo_coisas" style="width:64px; height:64px; margin-left:5px; float:left; background:url(img/fundo_coisas.png);">
+                            <div id="img_coisas" style="width:64px; height:64px; background:url(img/imagemmdamda.png) no-repeat center;"></div>
+                        </div>
+                        <div id="fundo_coisas" style="width:64px; height:64px; margin-left:5px; float:left; background:url(img/fundo_coisas.png);">
+                            <div id="img_coisas" style="width:64px; height:64px; background:url(img/imagemmdamda.png) no-repeat center;"></div>
+                        </div>
+
+
+                    </p>
+                </div>
+            </div>
+
+            <div id="box_meio">
+                <div id="box_titulo_meio">
+                    <p>Lista de amigos <span id="vermais_1">Ver Mais</span></</p>
+                </div>
+                <div id="box_conteudo_meio">
+                    <p>
+                        <div id="centralizar_amigos">
+                            <div id="lista_amigos">
+                                <div id="fundo_amigos">
+                                    <div id="avatar_amigos" style="width:90px; height:120px; background:url(img/avatarimage1.gif) no-repeat center;"></div>
+                                    <div id="status_amigos" style="width:90px; height:40px; background:#85B200; float:left; margin-top:-40px; border-radius:0 0 5px 5px;"></div>
+                                </div>
+                            </div>
+
+                            <div id="lista_amigos">
+                                <div id="fundo_amigos">
+                                    <div id="avatar_amigos" style="width:90px; height:120px; background:url(img/avatarimage1.gif) no-repeat center;"></div>
+                                    <div id="status_amigos" style="width:90px; height:40px; background:#85B200; float:left; margin-top:-40px; border-radius:0 0 5px 5px;"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <div id="box_meio">
+                <div id="box_titulo_meio">
+                    <p>Galeria <span id="vermais_1">Ver Mais</span></</p>
+                </div>
+                <div id="box_conteudo_meio">
+                    <p>
+                        <div id="centralizar_galeria">
+                            <div id="img_galeria" style="width:202px; height:226px; background:url(img/img_galeria.png); float:left; border-radius:5px;">
+                                <div id="nome_galeria" style="width:202px; height:55px; background:url(img/nome_galeria.png); float:left;">
+                                    <p style="color:#FFFFFF;  margin:0; padding:15px;">nome</p>
+                                </div>
+
+                                <div id="ferramentas_galeria" style="width:186px; height:56px; background:#FFFFFF; border-radius:5px; float:left; margin-left:8px; margin-top:108px;">
+                                    <div id="lupa_galeria" style="width:41px; height:41px; background:url(img/lupa_galeria.png); margin:8px; float:left;"></div>
+                                    <div id="comentario_galeria" style="width:41px; height:41px; background:url(img/comentario_galeria.png); float:left; margin-top:8px;"></div>
+                                    <div id="habbo_galeria" style="width:41px; height:41px; background:#E18A23; float:left; margin-left:8px; border-radius:5px; margin-top:7px;">
+                                        <div id="avatar_galeria" style="width:41px; height:41px; background:url(img/avatarimage.gif)no-repeat center; "></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="img_galeria" style="width:202px; height:226px; background:url(img/img_galeria.png); float:left; border-radius:5px;">
+                                <div id="nome_galeria" style="width:202px; height:55px; background:url(img/nome_galeria.png); float:left;">
+                                    <p style="color:#FFFFFF;  margin:0; padding:15px;">nome</p>
+                                </div>
+
+                                <div id="ferramentas_galeria" style="width:186px; height:56px; background:#FFFFFF; border-radius:5px; float:left; margin-left:8px; margin-top:108px;">
+                                    <div id="lupa_galeria" style="width:41px; height:41px; background:url(img/lupa_galeria.png); margin:8px; float:left;"></div>
+                                    <div id="comentario_galeria" style="width:41px; height:41px; background:url(img/comentario_galeria.png); float:left; margin-top:8px;"></div>
+                                    <div id="habbo_galeria" style="width:41px; height:41px; background:#E18A23; float:left; margin-left:8px; border-radius:5px; margin-top:7px;">
+                                        <div id="avatar_galeria" style="width:41px; height:41px; background:url(img/avatarimage.gif)no-repeat center; "></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="img_galeria" style="width:202px; height:226px; background:url(img/img_galeria.png); float:left; border-radius:5px;">
+                                <div id="nome_galeria" style="width:202px; height:55px; background:url(img/nome_galeria.png); float:left;">
+                                    <p style="color:#FFFFFF;  margin:0; padding:15px;">nome</p>
+                                </div>
+
+                                <div id="ferramentas_galeria" style="width:186px; height:56px; background:#FFFFFF; border-radius:5px; float:left; margin-left:8px; margin-top:108px;">
+                                    <div id="lupa_galeria" style="width:41px; height:41px; background:url(img/lupa_galeria.png); margin:8px; float:left;"></div>
+                                    <div id="comentario_galeria" style="width:41px; height:41px; background:url(img/comentario_galeria.png); float:left; margin-top:8px;"></div>
+                                    <div id="habbo_galeria" style="width:41px; height:41px; background:#E18A23; float:left; margin-left:8px; border-radius:5px; margin-top:7px;">
+                                        <div id="avatar_galeria" style="width:41px; height:41px; background:url(img/avatarimage.gif)no-repeat center; "></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <div id="box_meio">
+                <div id="box_titulo_meio">
+                    <p>Últimas tirinhas <span id="vermais_1">Ver Mais</span></</p>
+                </div>
+                <div id="box_conteudo_meio">
+                    <p>
+                        <div id="centralizar_tirinha">
+                            <div id="divisor_topico" style="margin-left:8px; float:left;">
+                                <div id="tirinha" style="width:315px; height:118px; float:left;  background:#FFFFFF; border-radius:5px;">
+                                    <p style="color:#666666;">Titulo
+                                        <div id="comentario_tirinha" style="width:53px; height:34px; background:url(img/comentario_tirinha.png); float:right; margin-right:5px; margin-top:-25px;">
+                                            <p style="margin:0; color:#FFFFFF; padding:7px 0 0px 24px;">40</p>
+                                        </div>
+                                    </p>
+                                    <div id="imagem_tirinha" style="width:300px; height:62px; background:url(img/tirinha.png); margin:8px;"> </div>
+                                </div>
+                            </div>
+                            <div id="divisor_topico" style="margin-left:5px; float:left;">
+                                <div id="tirinha" style="width:315px; height:118px; float:left;   background:#FFFFFF; border-radius:5px;">
+                                    <p style="color:#666666;">Titulo
+                                        <div id="comentario_tirinha" style="width:53px; height:34px; background:url(img/comentario_tirinha.png); float:right; margin-right:5px; margin-top:-25px;">
+                                            <p style="margin:0; color:#FFFFFF; padding:7px 0 0px 24px;">40</p>
+                                        </div>
+                                    </p>
+                                    <div id="imagem_tirinha" style="width:300px; height:62px; background:url(img/tirinha.png); margin:8px;"> </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!--Conteudo-->
+
+    <footer>
+        <div id="conheca_rodape">
+            <div id="texto_rodape">
+                <h1>Conheça a rádio</h1>
+                <p style="width:720px;">A Kibboa é um fã-site do Habbo Hotel, criado para divertir e entreter seus usuários da melhor forma possível. Somos um fã-site de amigos! Essa sim, é a mais “na boa” do Hotel! Nosso foco está em nossa área de eventos, rádio e valores.
+                    Estaremos sempre atualizando os conteúdos e trazendo diversão para você!</p>
+            </div>
+        </div>
+
+        <div id="creditos_rodape">
+            <div id="texto_rodape">
+                <div id="desenhado" style="width:42px; height:42px; background:url(img/desenhado.png); float:left; margin-top:-32px;"></div>
+                <p style="margin:0; margin-top:-15px; margin-left:5px; color:#B1BABF; text-shadow:1px 1px #465364; float:left; font-size:12px;">Desenho por <b style="color:#FFFFFF;">Jorge Peixoto</b> e codificação por <b style="color:#FFFFFF;">Filippe</b>. Créditos adicionais à <b style="color:#FFFFFF;">Luiz Fernando</b>.</p>
+            </div>
+        </div>
+
+        <div id="sobre_rodape">
+            <div id="texto_rodape">
+                <h1 style="color:#FFFFFF; margin:0;">Sobre</h1>
+                <p style="width:560px; font-size:12px;">Copyrights © 2010 - 2015 | Habbo. Todos os direitos reservados a este site da web.<br> Este site não é de propriedade ou operado pela Sulake Corporation e não é parte do Habbo Hotel ®.</p>
+                <input type="button" id="crie" value="Voltar ao topo">
+
+                <div id="player" style="margin-top:31px;">
+                    <div id="volume"></div>
+                    <div id="avatar_player"></div>
+                    <div id="nome_player">
+                        <div id="icon_locutor"></div>
+                        <p>Moreno-Bombom</p>
+                    </div>
+                    <div id="programa_player">
+                        <div id="icon_programa"></div>
+                        <p>Explosão Musical</p>
+                    </div>
+                    <div id="ouvintes">
+                        <p>320</p>
+                    </div>
+                    <div id="play"></div>
+                    <div id="skype"></div>
+                    <div id="pedidos"></div>
+                    <div id="favorito"></div>
+                    <div id="cor_player"></div>
+                </div>
+            </div>
+            <div>
+
+
+    </footer>
+
+</body>
+
+</html>
